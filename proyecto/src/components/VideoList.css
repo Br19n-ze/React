@@ -1,0 +1,98 @@
+
+.video-list {
+    padding: 20px;
+  }
+  
+  .category-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .category-item {
+    margin-bottom: 40px;
+  }
+  
+  .category-item h2 {
+    margin-bottom: 10px;
+  }
+  
+  .video-carousel {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding-bottom: 20px;
+    margin-bottom: -20px; /* Para compensar el padding */
+  }
+  
+  .video-item {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .video-item h3 {
+    margin: 0 0 10px 0;
+  }
+  
+  .video-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  .video-item p {
+    margin: 10px 0;
+    text-align: center;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .button-container button {
+    margin-right: 10px;
+    padding: 10px 20px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .button-container button:hover {
+    opacity: 0.8;
+  }
+  
+  .video-item.Front\ End {
+    border-left: 4px solid blue;
+  }
+  
+  .video-item.Back\ End {
+    border-left: 4px solid red;
+  }
+  
+  .video-item.Innovación {
+    border-left: 4px solid green;
+  }
+  
+  .video-item.Gestión {
+    border-left: 4px solid orange;
+  }
+  
+  @media (min-width: 768px) {
+    .video-carousel {
+      flex-wrap: nowrap;
+    }
+  
+    .video-item {
+      flex: 0 0 auto;
+    }
+  }
+  
